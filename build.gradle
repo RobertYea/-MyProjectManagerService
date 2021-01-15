@@ -1,0 +1,46 @@
+buildscript {
+    ext {
+        springBootVersion = '2.4.0'
+    }
+
+    repositories {
+
+        mavenCentral()
+
+        // 阿里云Maven远程仓库
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+
+//使用以下插件
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.yq'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '1.8' // jvm版本要求
+
+// 定义仓库
+repositories {
+    maven{url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    maven{url 'https://mvnrepository.com/'}
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-test')
+    compile('com.baomidou:mybatis-plus-boot-starter:3.4.2')
+    compile('mysql:mysql-connector-java')
+    compile('com.alibaba:druid-spring-boot-starter:1.2.4')
+    compile('com.google.code.gson:gson')
+    compile('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
