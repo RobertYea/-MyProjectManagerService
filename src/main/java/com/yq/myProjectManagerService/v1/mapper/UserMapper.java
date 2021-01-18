@@ -2,7 +2,6 @@ package com.yq.myProjectManagerService.v1.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yq.myProjectManagerService.v1.entity.User;
-import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

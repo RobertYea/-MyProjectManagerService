@@ -2,6 +2,8 @@ package com.yq.myProjectManagerService.v1.controller;
 
 import com.yq.myProjectManagerService.v1.entity.User;
 import com.yq.myProjectManagerService.v1.service.UserService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,6 +27,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @ApiOperation("显示所有用户")
     @GetMapping("/list")
     public List<User> list() {
         List<User> list = userService.list();
