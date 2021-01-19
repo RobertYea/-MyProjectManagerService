@@ -1,7 +1,6 @@
 package com.yq.myProjectManagerService.v1.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.yq.myProjectManagerService.v1.entity.User;
+import com.yq.myProjectManagerService.v1.entity.db.User;
 
 import java.util.List;
 

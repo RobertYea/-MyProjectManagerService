@@ -1,12 +1,14 @@
 # MyProjectManagerService
 
 #### 介绍
-项目管理
+项目管理后台
 
 #### 软件架构
 软件架构说明
 springboot 2.4.0
+gradle 6.7.1
 mysql 8.0.13
+mybatis-plus 3.4.2
 
 
 #### 安装教程

@@ -1,6 +1,6 @@
-package com.yq.myProjectManagerService.v1.serviceImpl;
+package com.yq.myProjectManagerService.v1.service.impl;
 
-import com.yq.myProjectManagerService.v1.entity.User;
+import com.yq.myProjectManagerService.v1.entity.db.User;
 import com.yq.myProjectManagerService.v1.mapper.UserMapper;
 import com.yq.myProjectManagerService.v1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.yq.myProjectManagerService.v1.entity;
+package com.yq.myProjectManagerService.v1.entity.db;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
@@ -12,7 +12,6 @@ import java.io.Serializable;
  * @version 1.0
  * @date 2021/01/16
  */
-@Data
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -21,14 +20,10 @@ public class User implements Serializable {
 
     private String uuid;
 
-    @TableField("userName")
+    @TableField("user_name")
     private String userName;
 
     private String password;
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
 
     public int getId() {
         return id;
@@ -70,5 +65,15 @@ public class User implements Serializable {
         this.uuid = uuid;
         this.userName = userName;
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", uuid='" + uuid + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
