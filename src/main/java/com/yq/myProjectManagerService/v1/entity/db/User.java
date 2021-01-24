@@ -3,8 +3,6 @@ package com.yq.myProjectManagerService.v1.entity.db;
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
-import java.io.Serializable;
-
 /**
  * User
  *

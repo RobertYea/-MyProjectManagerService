@@ -36,6 +36,6 @@ public class UserController {
     @GetMapping("/list")
     public ResultBean list() {
         List<User> list = userService.list();
-        return ResultBean.makeResult(true, "", list);
+        return ResultBean.makeResult(true, "查询成功", list);
     }
 }

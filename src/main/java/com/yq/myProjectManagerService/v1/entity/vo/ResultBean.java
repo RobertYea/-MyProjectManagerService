@@ -20,12 +20,6 @@ public class ResultBean {
     public ResultBean() {
     }
 
-    public ResultBean(String status, String message, Object result) {
-        this.status = status;
-        this.message = message;
-        this.result = result;
-    }
-
     public String getStatus() {
         return status;
     }

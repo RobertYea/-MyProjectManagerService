@@ -2,11 +2,8 @@ package com.yq.myProjectManagerService.v1.entity.db;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
 import java.util.Date;
-import java.util.Objects;
 
 /**
  * Project
@@ -21,6 +18,10 @@ public class Project {
     private Integer id;
 
     private String name;
+
+    private String description;
+
+    private String status;
 
     @TableField("create_time")
     private Date createTime;
